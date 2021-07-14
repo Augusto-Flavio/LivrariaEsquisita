@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
-a{
+a {
     color: black;
     text-decoration: none;
 }
 
+a.botao-comprar, .botao-loja {
+    background-color: yellow;
+    padding: 10px;
+}
+
 a.logo {
-    background-color: chocolate;
     flex: 1;
 }
 
@@ -16,13 +20,20 @@ a.logo img {
     margin-right: 5px;
 }
 
-header.cabecalho, a.logo, input#barra-de-pesquisa, nav.menu{
+div.livros {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header.cabecalho, a.logo, input#barra-de-pesquisa, nav.menu {
     display: flex;
     align-items: center;
 }
 
 header.cabecalho {
-    background-color: aqua;
+    background-color: #FFF500;
     width: 100%;
     height: 60px;
     position: relative;
@@ -30,19 +41,77 @@ header.cabecalho {
     left: -7px;
 }
 
-
-input#barra-de-pesquisa{
-    flex: 1;
+.cabecalho img {
+    width: 40px;
+    height: 40px;
 }
 
-nav.menu{
-    background-color: chocolate;
+.cabecalho a {
+    padding-left: 8px;
+}
+
+table.rodape {
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+table.rodape a {
+    color: white;
+}
+
+.redes-sociais {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #FFF500;
+}
+
+input#barra-de-pesquisa {
+    flex: 1;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: 0.5s;
+}
+
+input#barra-de-pesquisa:focus {
+    border: 2px solid #555;
+}
+
+nav.menu {
     height: 50px;
     flex: 1;
     justify-content: center;
     text-align: center;
 }
 
-nav.menu a{
+nav.menu a {
     margin-right: 5px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul.carrosel {
+    margin-left: -50px;
+}
+
+ul.carrosel li {
+    box-shadow: 0px 0px 10px black;
+    width: 180px;
+    height: 280px;
+    text-align: center;
+    /* flex-basis: 27%; */
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.redes-sociais img {
+    padding-top: 8px;
 }
