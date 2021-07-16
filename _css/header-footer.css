@@ -15,7 +15,7 @@ a.logo img {
     margin-right: 5px;
 }
 
-header.cabecalho, a.logo, input#barra-de-pesquisa, nav.menu {
+header.cabecalho, a.logo, input#barra-de-pesquisa{
     display: flex;
     align-items: center;
 }
@@ -73,12 +73,22 @@ nav.menu {
     flex: 1;
     justify-content: center;
     text-align: center;
+    display: grid;
+    grid-template:
+                "user message cart"
+                "user account cart";
 }
 
 nav.menu a {
     margin-right: 5px;
+    font-size: 1rem;
 }
 
 .redes-sociais img {
     padding: 8px;
 }
+
+.menu .user-image { grid-area: user; }
+.menu section { grid-area: message; }
+.menu .account-link { grid-area: account; }
+.menu .cart { grid-area: cart; }
