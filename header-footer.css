@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-body{
-    margin: 0;
-    padding: 0;
-}
-
 a {
     color: black;
     text-decoration: none;
@@ -28,7 +23,9 @@ a.logo img {
 div.livros {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -96,26 +93,6 @@ nav.menu a {
     margin-right: 5px;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-ul.carrosel {
-    margin-left: -50px;
-}
-
-ul.carrosel li {
-    box-shadow: 0px 0px 10px black;
-    width: 180px;
-    height: 280px;
-    text-align: center;
-    /* flex-basis: 27%; */
-    margin: 10px;
-    padding-top: 10px;
-}
 
 .redes-sociais img {
     padding-top: 8px;
