@@ -5,11 +5,6 @@ a {
     text-decoration: none;
 }
 
-a.botao-comprar, .botao-loja {
-    background-color: yellow;
-    padding: 10px;
-}
-
 a.logo {
     flex: 1;
 }
@@ -18,15 +13,6 @@ a.logo img {
     width: 50px;
     height: 50px;
     margin-right: 5px;
-}
-
-div.livros {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 header.cabecalho, a.logo, input#barra-de-pesquisa, nav.menu {
@@ -93,7 +79,6 @@ nav.menu a {
     margin-right: 5px;
 }
 
-
 .redes-sociais img {
-    padding-top: 8px;
+    padding: 8px;
 }

@@ -1,0 +1,32 @@
+a.botao-comprar, .botao-loja {
+    background-color: yellow;
+    padding: 10px;
+}
+
+div.livros {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul.carrosel {
+    margin-left: -50px;
+}
+
+ul.carrosel li {
+    box-shadow: 0px 0px 10px black;
+    width: 180px;
+    height: 280px;
+    text-align: center;
+    /* flex-basis: 27%; */
+    margin: 10px;
+    padding-top: 10px;
+}
