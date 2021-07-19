@@ -2,10 +2,9 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 1000px;
-
-
-  flex-basis: 50%;
+  /* width: 1300px; */
+  /* flex-wrap: wrap; */
+  max-width: 800px;
 }
 
 .categorias {
@@ -17,18 +16,26 @@ main {
 
 .livros li{
   box-shadow: 0px 0px 10px black;
-  width: 100px;
-  height: auto;
   text-align: center;
-  flex-basis: 27%;
+  /* flex-basis: 27%; */
   margin: 8px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 160px;
 }
 
 .column {
+  flex-basis: 100%;
   text-align: center;
   
+}
+.livros {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.livros > li {
+  flex: 1 1 12em;
 }
