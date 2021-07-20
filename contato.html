@@ -4,13 +4,27 @@
 
 <head>
   <title>Contato</title>
-  <link rel="stylesheet" href="_css/style.css" />
-  <link rel="stylesheet" href="_css/home.css" />
+  <link rel="stylesheet" href="_css/style.css"/>
   <link rel="stylesheet" href="_css/header-footer.css" />
+  <link rel="stylesheet" href="_css/contato.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
+<script>
+  var aberta = false;
+  function abrirResposta(resposta){
+    if (!aberta){
+      document.getElementById(resposta).style = "display: block;";
+      aberta = true
+    }
+    else{
+      document.getElementById(resposta).style = "display: none;";
+      aberta = false
+    }
+  }
+</script>
 
 <body>
   <header class="cabecalho">
@@ -25,39 +39,48 @@
     </nav>
   </header>
   
-  <h3>Contato</h3>
-  <input type="text" id="nome" name="nome" placeholder="Nome">
-  <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome"><br>
-  <input type="text" id="e-mail" name="e-mail" placeholder="E-mail"><br>
-  <input type="text" id="solicitacao" name="solicitacao" placeholder="Solicitação">
-  <input type="text" id="telefone" name="telefone" placeholder="Telefone"><br>
-  <input type="text" id="assunto" name="assunto" placeholder="Assunto"><br>
-  <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Mensagem"></textarea><br>
-  <input type="submit" value="Enviar">              
+  <section id="corpo">
+    <div>
+      <h3>Contato</h3>
+      <form action="">
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+        <input type="text" id="e-mail" name="e-mail" placeholder="E-mail">
+        <input type="text" id="solicitacao" name="solicitacao" placeholder="Solicitação">
+        <input type="text" id="telefone" name="telefone" placeholder="Telefone">
+        <input type="text" id="assunto" name="assunto" placeholder="Assunto">
+        <textarea id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+        <div style="text-align: center;"><input type="submit" value="Enviar"></div>
+      </form>
+    </div>
 
-  <br><br>
+    <div>
+      <h3><a href="#perguntas-frequentes" id="perguntas-frequentes">Perguntas Frequentes</a></h3>
 
-  <h3><a href="#perguntas-frequentes" id="perguntas-frequentes">Perguntas Frequentes</a></h3>
-  <strong>Como atualizo cadastro?</strong><br><br>
-  Na parte superior do site você vai encontrar o ícone de usuário e a<br>
-  mensagem de boas vindas. Caso não esteja logado, clique em
-  "Entre ou cadastre-se" e, em seguida, na opção "Minha Conta".<br><br>
-  <strong>Esqueci minha senha. Como devo proceder?</strong><br><br>
-  <strong>Quero cancelar uma compra, como eu faço?</strong><br><br>
-  <strong>Como sei quando posso retirar o produto?</strong><br><br>
-  <strong>Não tenho mais acesso ao e-mail antigo de cadastro</strong><br><br>
-  <strong>Como posso pagar meu pedido?</strong><br><br>
+      <strong onclick="abrirResposta('r1')">Como atualizo cadastro?</strong><br>
+      <p id="r1">
+        Na parte superior do site você vai encontrar o ícone de usuário e a mensagem de boas vindas. Caso não esteja logado, clique em "Entre ou cadastre-se" e, em seguida, na opção "Minha Conta".
+        <br></p>
 
-  <br><br><br>
+      <strong onclick="abrirResposta('r2')">Esqueci minha senha. Como devo proceder?</strong><br>
+      <p id="r2">
+        A recuperação da senha vai depender da forma como normalmente você faz seu login, ou seja, pode ser através da chave de acesso, e-mail e senha ou Facebook.<br>
+        Nos casos do login com chave de acesso ou e-mail e senha você precisa inserir o e-mail cadastrado no site para dar continuidade ao processo.
+        <br></p>
+      
+      <strong>Quero cancelar uma compra, como eu faço?</strong><br>
+      <strong>Como sei quando posso retirar o produto?</strong><br>
+      <strong>Não tenho mais acesso ao e-mail antigo de cadastro</strong><br>
+      <strong>Como posso pagar meu pedido?</strong><br>
+    </div>
+  </section>
+
   
-  <br>
-
   <table cellspacing="15" class="rodape">
     <div class="redes-sociais">
       <a href="https://www.facebook.com/livrariaesquisita/" target="_blank"> <img src="imagens\facebook icon 1.png"></a>
       <a href="https://wa.me/5591980350459" target="_blank"> <img src="imagens\whatsapp icon 1.png"></a>
-      <a href="https://www.instagram.com/livrariaesquisita/" target="_blank"> <img
-          src="imagens\instagram icon 1.png"></a>
+      <a href="https://www.instagram.com/livrariaesquisita/" target="_blank"> <img src="imagens\instagram icon 1.png"></a>
     </div>
     <tr>
       <td>
@@ -148,6 +171,7 @@
       </td>
     </tr>
   </table>
+  
 
 </body>
 
